@@ -1,6 +1,5 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { TravelService } from './travel.service.js';
-import { CreateTravelDto } from './dto/create-travel.dto.js';
 import { UpdateTravelDto } from './dto/update-travel.dto.js';
 
 @Controller('travel')
@@ -8,8 +7,8 @@ export class TravelController {
   constructor(private readonly travelService: TravelService) {}
 
   @Post()
-  create(@Body() createTravelDto: CreateTravelDto) {
-    return this.travelService.create(createTravelDto);
+  create() {
+    return 'planifierun nouveau voyage ici';
   }
 
   @Get()

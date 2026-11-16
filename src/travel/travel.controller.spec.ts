@@ -17,4 +17,8 @@ describe('TravelController', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
+
+  it('should return the new travel planning message', () => {
+    expect(controller.create()).toBe('planifierun nouveau voyage ici');
+  });
 });
