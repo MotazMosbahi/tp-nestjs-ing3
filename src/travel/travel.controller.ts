@@ -8,7 +8,7 @@ export class TravelController {
 
   @Post()
   create() {
-    return 'planifierun nouveau voyage ici';
+    return 'planifier un nouveau voyage ici';
   }
 
   @Get()

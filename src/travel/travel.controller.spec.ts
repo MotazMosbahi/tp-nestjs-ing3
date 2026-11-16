@@ -19,6 +19,6 @@ describe('TravelController', () => {
   });
 
   it('should return the new travel planning message', () => {
-    expect(controller.create()).toBe('planifierun nouveau voyage ici');
+    expect(controller.create()).toBe('planifier un nouveau voyage ici');
   });
 });
